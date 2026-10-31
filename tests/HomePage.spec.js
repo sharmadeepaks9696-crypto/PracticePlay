@@ -2,7 +2,7 @@
 import {test, expect} from '@playwright/test';
 
 //define a test block
-test('homepage ,async({page})=>{
+test('homepage   @smoke' , async ({page}) => {
 
     await page.goto("https://www.demoblaze.com/index.html");
     const pagetitle= page.title();
@@ -12,7 +12,6 @@ await expect(page).toHaveTitle("STORE");
 
 await page.close();
  
-
 })
 
 
